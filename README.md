@@ -19,6 +19,11 @@ Widgets producer takes widgets data and create widget. Widgets
 producer may be a standalone (weather, currency, ...), or a part of 
 some module (for example - last news for news module).
 
+![Widgets on web-site mainpage](https://raw.githubusercontent.com/php-strict/widgets/master/img/workflow.svg)
+
+![Widgets on web-site other page](https://raw.githubusercontent.com/php-strict/widgets/master/img/workflow2.svg)
+
+
 ## Requirements
 
 *   PHP >= 7.1
