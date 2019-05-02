@@ -2,13 +2,12 @@
 
 [![Software License][ico-license]](LICENSE.txt)
 
-Widgets mechanism allow widgets consumer gets widgets from widgets 
-provider and place any widgets in predefined places. Widgets consumer 
-ask widgets provider for widgets for specific scope/place, throught 
-provider public interface. Or widgets provider can take consumer-object 
-as parameter and inject widgets into it. For this purposes widgets 
-consumer define public methods to gets current scope and all places 
-for current scope.
+Widgets mechanism allow [widgets consumer](https://github.com/php-strict/widgets-consumer) 
+gets widgets from widgets provider and place any widgets in predefined places. 
+Widgets consumer ask widgets provider for widgets for specific scope/place, 
+throught provider public interface. Or widgets provider can take consumer-object 
+as parameter and inject widgets into it. For this purposes widgets consumer 
+define public methods to gets current scope and all places for current scope.
 
 Widgets providers works with widgets data storage. Widgets data storage 
 stores information about widgets scope, place and some widget type 
