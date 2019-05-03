@@ -9,7 +9,8 @@ throught provider public interface. Or widgets provider can take consumer-object
 as parameter and inject widgets into it. For this purposes widgets consumer 
 define public methods to gets current scope and all places for current scope.
 
-Widgets providers works with widgets data storage. Widgets data storage 
+[Widgets providers](https://github.com/php-strict/widgets-provider)
+works with widgets data storage. Widgets data storage 
 stores information about widgets scope, place and some widget type 
 dependent parameters. Widgets provider refers to the widgets producers, 
 that are encapsulated in widgets data, for creating the widgets.
@@ -58,13 +59,5 @@ use PhpStrict\WidgetsProvider
 ```
 
 See examples dir.
-
-## Tests
-
-To execute the test suite, you'll need [Codeception](https://codeception.com/).
-
-```bash
-vendor\bin\codecept run
-```
 
 [ico-license]: https://img.shields.io/badge/license-GPL-brightgreen.svg?style=flat-square
