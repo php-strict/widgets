@@ -23,7 +23,6 @@ some module (for example - last news for news module).
 
 ![Widgets on web-site other page](https://raw.githubusercontent.com/php-strict/widgets/master/img/workflow2.svg?sanitize=true)
 
-
 ## Requirements
 
 *   PHP >= 7.1
