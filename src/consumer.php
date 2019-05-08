@@ -50,6 +50,10 @@ $storage = new \PhpStrict\WidgetsProvider\ArrayStorage([
 
 $provider = new MyWidgetsProvider($storage);
 
+/*
+Widgets provider not know about special 'all pages' scope 
+and can't merge widgets for asked scope and special scope.
+*/
 echo 'Using injection into consumer' . "\n";
 echo '---' . "\n";
 echo 'scope: /' . "\n";
@@ -75,6 +79,11 @@ echo "\n";
 echo '======' . "\n";
 echo "\n";
 
+/*
+Widgets consumer know about spectial scope 'all pages' 
+and use method appendWidgets to append widgets for another scope 
+instead of replacing they by setWidgets method.
+*/
 echo 'Using provider getters' . "\n";
 echo '---' . "\n";
 echo 'scope: /' . "\n";
@@ -106,6 +115,10 @@ echo "\n";
 echo '======' . "\n";
 echo "\n";
 
+/*
+By default provider method getScopeWidgets returns widgets for all places, 
+but it is possible to specify places.
+*/
 echo 'Using provider getters and specify places [place1, place4]' . "\n";
 echo '---' . "\n";
 echo 'scope: /page1' . "\n";
