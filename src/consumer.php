@@ -3,13 +3,6 @@ declare(strict_types=1);
 
 namespace PhpStrict\Widgets;
 
-ini_set('display_errors', '1');
-ini_set('error_reporting', (string) E_ALL);
-ini_set('scream.enabled', '1');
-date_default_timezone_set('Europe/Moscow');
-setlocale(LC_ALL, 'ru_RU.utf-8', 'rus_RUS.utf-8', 'ru_RU.utf8');
-mb_internal_encoding('UTF-8');
-
 require_once 'vendor/autoload.php';
 
 $storage = new \PhpStrict\WidgetsProvider\ArrayStorage([
