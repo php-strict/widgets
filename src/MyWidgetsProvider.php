@@ -11,6 +11,10 @@ declare(strict_types=1);
 
 namespace PhpStrict\Widgets;
 
+/**
+ *  Simple implementation of widgets provider.
+ *  Not used any widgets producers, just generates widgets with data.
+ */
 class MyWidgetsProvider extends \PhpStrict\WidgetsProvider\WidgetsProvider
 {
     public function __construct(\PhpStrict\WidgetsProvider\WidgetsDataStorageInterface $storage)
@@ -18,6 +22,11 @@ class MyWidgetsProvider extends \PhpStrict\WidgetsProvider\WidgetsProvider
         $this->storage = $storage;
     }
     
+    /**
+     *  Clears local widgets cache.
+     *  
+     *  @return void
+     */
     public function flushWidgets(): void
     {
         $this->widgets = null;
