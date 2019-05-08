@@ -1,0 +1,27 @@
+{
+    "name": "php-strict/widgets",
+    "type": "project",
+    "description": "Widgets examples repository.",
+    "keywords": ["php","widget","widgets","example","examples"],
+    "homepage": "https://github.com/php-strict/widgets",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Enikeishik",
+            "email": "enikeishik@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "php-strict/widgets-consumer": "dev-master",
+        "php-strict/widgets-provider": "dev-master",
+        "php-strict/widgets-producer": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "PhpStrict\\Widgets\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
