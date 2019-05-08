@@ -45,6 +45,13 @@ class MyWidgetsConsumer implements \PhpStrict\WidgetsConsumer\WidgetsConsumerInt
         $this->widgets = array_merge_recursive($this->widgets, $widgets);
     }
     
+    /**
+     *  Simple widget render implementation.
+     *  
+     *  @param string $place
+     *  
+     *  @return void
+     */
     public function renderWidgets(string $place): void
     {
         if (!array_key_exists($place, $this->widgets)) {
