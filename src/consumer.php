@@ -13,7 +13,7 @@ mb_internal_encoding('UTF-8');
 require_once 'vendor/autoload.php';
 
 $storage = new \PhpStrict\WidgetsProvider\ArrayStorage([
-    '' => [//scope for all pages
+    '' => [//scope for all pages, with mark
         'place1' => [
             ['mark' => 'all'],
         ],
