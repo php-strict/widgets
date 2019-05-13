@@ -11,6 +11,10 @@ declare(strict_types=1);
 
 namespace PhpStrict\Widgets;
 
+/**
+ *  Simple implementation of widgets consumer.
+ *  Provides renderWidgets method to output widgets content.
+ */
 class MyWidgetsConsumer implements \PhpStrict\WidgetsConsumer\WidgetsConsumerInterface
 {
     protected $scope = '';
