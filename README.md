@@ -57,6 +57,6 @@ Extend abstract class WidgetsProvider or create your own class, implements Widge
 use PhpStrict\WidgetsProvider
 ```
 
-See examples dir.
+See examples in src dir.
 
 [ico-license]: https://img.shields.io/badge/license-GPL-brightgreen.svg?style=flat-square
