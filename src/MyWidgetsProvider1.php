@@ -15,7 +15,7 @@ namespace PhpStrict\Widgets;
  *  Simple implementation of widgets provider.
  *  Not used any widgets producers, just generates widgets with data.
  */
-class MyWidgetsProvider extends \PhpStrict\WidgetsProvider\WidgetsProvider
+class MyWidgetsProvider1 extends \PhpStrict\WidgetsProvider\WidgetsProvider
 {
     public function __construct(\PhpStrict\WidgetsProvider\WidgetsDataStorageInterface $storage)
     {
@@ -35,6 +35,6 @@ class MyWidgetsProvider extends \PhpStrict\WidgetsProvider\WidgetsProvider
     protected function produceWidget(array $widgetData): \PhpStrict\WidgetsProducer\WidgetInterface
     {
         //windgets producer emulation
-        return new MyProducedWidget($widgetData);
+        return new MyProducedWidget1($widgetData);
     }
 }

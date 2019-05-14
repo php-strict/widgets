@@ -15,7 +15,7 @@ namespace PhpStrict\Widgets;
  *  Simple implementation of produced widget.
  *  Just takes and return widgets data.
  */
-class MyProducedWidget implements \PhpStrict\WidgetsProducer\WidgetInterface
+class MyProducedWidget1 implements \PhpStrict\WidgetsProducer\WidgetInterface
 {
     protected $widgetData = [];
     

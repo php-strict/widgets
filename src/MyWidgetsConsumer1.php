@@ -15,7 +15,7 @@ namespace PhpStrict\Widgets;
  *  Simple implementation of widgets consumer.
  *  Provides renderWidgets method to output widgets content.
  */
-class MyWidgetsConsumer implements \PhpStrict\WidgetsConsumer\WidgetsConsumerInterface
+class MyWidgetsConsumer1 implements \PhpStrict\WidgetsConsumer\WidgetsConsumerInterface
 {
     protected $scope = '';
     

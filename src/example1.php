@@ -41,7 +41,7 @@ $storage = new \PhpStrict\WidgetsProvider\ArrayStorage([
     ],
 ]);
 
-$provider = new MyWidgetsProvider($storage);
+$provider = new MyWidgetsProvider1($storage);
 
 /*
 Widgets provider not know about special 'all pages' scope 
@@ -50,7 +50,7 @@ and can't merge widgets for asked scope and special scope.
 echo 'Using injection into consumer' . "\n";
 echo '---' . "\n";
 echo 'scope: /' . "\n";
-$consumer = new MyWidgetsConsumer('/');
+$consumer = new MyWidgetsConsumer1('/');
 $provider->setWidgets($consumer);
 $consumer->renderWidgets('place1');
 $consumer->renderWidgets('place2');
@@ -59,7 +59,7 @@ $consumer->renderWidgets('place4');
 echo "\n";
 
 echo 'scope: /page1' . "\n";
-$consumer = new MyWidgetsConsumer('/page1');
+$consumer = new MyWidgetsConsumer1('/page1');
 $provider->setWidgets($consumer);
 $consumer->renderWidgets('place1');
 $consumer->renderWidgets('place2');
@@ -80,7 +80,7 @@ instead of replacing they by setWidgets method.
 echo 'Using provider getters' . "\n";
 echo '---' . "\n";
 echo 'scope: /' . "\n";
-$consumer = new MyWidgetsConsumer();
+$consumer = new MyWidgetsConsumer1();
 $provider->flushWidgets();
 $consumer->setWidgets($provider->getScopeWidgets(''));
 $provider->flushWidgets();
@@ -92,7 +92,7 @@ $consumer->renderWidgets('place4');
 echo "\n";
 
 echo 'scope: /page1' . "\n";
-$consumer = new MyWidgetsConsumer();
+$consumer = new MyWidgetsConsumer1();
 $provider->flushWidgets();
 $consumer->setWidgets($provider->getScopeWidgets(''));
 $provider->flushWidgets();
@@ -115,7 +115,7 @@ but it is possible to specify places.
 echo 'Using provider getters and specify places [place1, place4]' . "\n";
 echo '---' . "\n";
 echo 'scope: /page1' . "\n";
-$consumer = new MyWidgetsConsumer();
+$consumer = new MyWidgetsConsumer1();
 $provider->flushWidgets();
 $consumer->setWidgets($provider->getScopeWidgets('', ['place1', 'place4']));
 $provider->flushWidgets();
