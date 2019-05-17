@@ -1,4 +1,14 @@
 <?php
+/**
+ *  Demonstration of structure of widgets data storage
+ *  and difference between
+ *      $provider->setWidgets($consumer)
+ *  and
+ *      $consumer->setWidgets($provider->getScopeWidgets(...));
+ *  
+ *  See also comments below.
+ */
+
 declare(strict_types=1);
 
 namespace PhpStrict\Widgets;
