@@ -1,4 +1,8 @@
 <?php
+/**
+ *  Demonstration of widgets producer mechanism on example of RandomTextWidgetsProducer.
+ */
+
 declare(strict_types=1);
 
 namespace PhpStrict\Widgets;
