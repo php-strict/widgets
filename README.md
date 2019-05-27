@@ -51,12 +51,6 @@ composer require php-strict/widgets-producer
 
 ## Usage
 
-Extend abstract class WidgetsProvider or create your own class, implements WidgetsProviderInterface:
-
-```php
-use PhpStrict\WidgetsProvider
-```
-
 See examples in src dir.
 
 [ico-license]: https://img.shields.io/badge/license-GPL-brightgreen.svg?style=flat-square
