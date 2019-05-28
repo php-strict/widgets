@@ -15,7 +15,8 @@ stores information about widgets scope, place and some widget type
 dependent parameters. Widgets provider refers to the widgets producers, 
 that are encapsulated in widgets data, for creating the widgets.
 
-Widgets producer takes widgets data and create widget. Widgets 
+[Widgets producer](https://github.com/php-strict/widgets-producer)
+takes widgets data and create widget. Widgets 
 producer may be a standalone (weather, currency, ...), or a part of 
 some module (for example - last news for news module).
 
