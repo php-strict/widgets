@@ -52,6 +52,6 @@ composer require php-strict/widgets-producer
 
 ## Usage
 
-See examples in src dir.
+See examples in [src](https://github.com/php-strict/widgets/tree/master/src) dir.
 
 [ico-license]: https://img.shields.io/badge/license-GPL-brightgreen.svg?style=flat-square
